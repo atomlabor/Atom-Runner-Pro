@@ -1,0 +1,20 @@
+[
+  { "type": "heading", "defaultValue": "Atom Runner Pro" },
+  { "type": "section", "items": [
+      { "type": "heading", "defaultValue": "PROFILE" },
+      { "type": "input", "messageKey": "CONFIG_AGE", "label": "Age", "attributes": { "type": "number", "placeholder": "51" } },
+      { "type": "text", "messageKey": "DUMMY_EXPLAIN", "label": "ZONE ANALYSIS", "defaultValue": "Enter age for Tanaka formula." }
+  ]},
+  { "type": "section", "items": [
+      { "type": "heading", "defaultValue": "TRAINING ZONES (BPM)" },
+      { "type": "slider", "messageKey": "CONFIG_ZONE_GREEN", "label": "Green (Aerobic)", "min": 80, "max": 160 },
+      { "type": "slider", "messageKey": "CONFIG_ZONE_ORANGE", "label": "Orange (Threshold)", "min": 90, "max": 190 },
+      { "type": "slider", "messageKey": "CONFIG_ZONE_RED", "label": "Red (Peak)", "min": 100, "max": 220 }
+  ]},
+  { "type": "section", "items": [
+      { "type": "heading", "defaultValue": "SETTINGS" },
+      { "type": "select", "messageKey": "CONFIG_UNIT_SYSTEM", "defaultValue": "0", "label": "Units", "options": [ { "label": "Metric (km)", "value": "0" }, { "label": "Imperial (mi)", "value": "1" } ] },
+      { "type": "input", "messageKey": "CONFIG_STEP_LENGTH", "label": "Step Length (cm/in)", "defaultValue": "75" }
+  ]},
+  { "type": "submit", "defaultValue": "SAVE & SYNC" }
+]

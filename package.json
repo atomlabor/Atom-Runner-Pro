@@ -1,0 +1,76 @@
+{
+  "name": "Atom Runner Pro",
+  "version": "1.0.0",
+  "author": "Atomlabor",
+  "dependencies": {
+    "pebble-clay": "^1.0.3"
+  },
+  "pebble": {
+    "displayName": "Atom Runner Pro",
+    "uuid": "58b3c1a9-9e2d-4f7b-8a1c-0d3e4f6b2a5d",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery",
+      "basalt",
+      "diorite",
+      "aplite",
+      "chalk"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "worker": {
+      "watchapp": {
+        "watchface": false
+      }
+    },
+    "capabilities": [
+      "location",
+      "health",
+      "configurable"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "font",
+          "name": "FONT_CUSTOM_60",
+          "file": "fonts/custom.ttf",
+          "pointSize": 52,
+          "targetPlatforms": [
+            "emery"
+          ],
+          "compatibility": "6.0",
+          "characterRegex": "[0-9:]"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BT_ICON",
+          "file": "images/bt-icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "menuIcon": true,
+          "file": "images/menu_icon.png"
+        }
+      ]
+    },
+    "messageKeys": {
+      "KEY_DATA_DIST": 1000,
+      "KEY_DATA_TIME": 1001,
+      "KEY_DATA_STEPS": 1002,
+      "KEY_DATA_AVG_HR": 1003,
+      "DUMMY_DASHBOARD": 1004,
+      "DUMMY_TOTALS": 1005,
+      "DUMMY_HISTORY": 1006,
+      "DUMMY_EXPLAIN": 1007,
+      "CONFIG_ZONE_ORANGE": 2000,
+      "CONFIG_ZONE_RED": 2001,
+      "CONFIG_AGE": 2002,
+      "CONFIG_STEP_LENGTH": 2003,
+      "CONFIG_UNIT_SYSTEM": 2004,
+      "CONFIG_ZONE_GREEN": 2005
+    }
+  }
+}
